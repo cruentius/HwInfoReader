@@ -15,9 +15,9 @@ namespace HwInfoReader.Tests.Controllers
             _hwInfoReader = hwInfoReader;
         }
 
-        [Route("sensorData")]
+        [Route("details")]
         [HttpGet]
-        public IActionResult GetSensorData()
+        public IActionResult GetDetails()
         {
             var sensorNames = _hwInfoReader.ReadSensors()
                 .Select(s => s.szSensorNameUser);

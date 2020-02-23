@@ -18,7 +18,7 @@
     "HwInfoReader.Tests": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/HwInfo/sensorData",
+      "launchUrl": "api/HwInfo/details",
       "applicationUrl": "http://localhost:5000/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
