@@ -19,11 +19,14 @@ namespace HwInfoReader.Tests.Controllers
         [HttpGet]
         public IActionResult GetSensorData()
         {
-            var grouped = _hwInfoReader.ReadSensorReadings()
+            var sensorNames = _hwInfoReader.ReadSensors()
+                .Select(s => s.szSensorNameUser);
+
+            var groupedReadings = _hwInfoReader.ReadSensorReadings()
                 .GroupBy(g => g.tReading)
                 .Select(s => new { Sensor = s.Key.ToString(), data = s.ToList() });
 
-            return Ok(grouped);
+            return Ok(new { AvailableSensors = sensorNames, SensorReadings = groupedReadings });
         }
     }
 }
