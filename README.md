@@ -1,6 +1,6 @@
 # HwInfoReader
 
-.Net Core Library which uses the HwInfoLibrary to read HwInfo sensors and readings. 
+.Net Core Library which uses the HwInfoLibrary dll to read HwInfo sensors and readings. 
 
 
-HwInfoLibrary found here: https://github.com/Antiserum420/HwInfoLibrary
+HwInfoLibrary source code found here: https://github.com/Antiserum420/HwInfoLibrary
