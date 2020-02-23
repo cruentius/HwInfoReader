@@ -1,0 +1,1 @@
+# HwInfoReader
