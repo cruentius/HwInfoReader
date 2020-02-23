@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HwInfoReader.Abstractions\HwInfoReader.Abstractions.csproj" />
+    <ProjectReference Include="..\HwInfoReader.AspNetCore\HwInfoReader.AspNetCore.csproj" />
+    <ProjectReference Include="..\HwInfoReader\HwInfoReader.csproj" />
+  </ItemGroup>
+
+</Project>

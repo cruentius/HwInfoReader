@@ -12,4 +12,10 @@
     <ProjectReference Include="..\HwInfoReader.Abstractions\HwInfoReader.Abstractions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="HwInfoLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
