@@ -6,6 +6,7 @@
     <Authors>Antiserum420</Authors>
     <Description>HwInfoReader.AspNetCore is an ASP.NET Core package which contains dependency injection extensions for IServiceCollection.</Description>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
+    <PackageTags>aspnetcore</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

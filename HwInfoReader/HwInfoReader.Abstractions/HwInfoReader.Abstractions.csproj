@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,6 +6,7 @@
     <Company>Antiserum420</Company>
     <Description>HwInfoReader.Abstractions is an ASP.NET Core package which contains HwInfoReader abstractions.</Description>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
+    <PackageTags>aspnetcore</PackageTags>
   </PropertyGroup>
 
 </Project>
