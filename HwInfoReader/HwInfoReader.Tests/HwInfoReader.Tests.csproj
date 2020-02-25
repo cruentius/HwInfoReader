@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Antiserum420</Authors>
+    <Company>Antiserum420</Company>
   </PropertyGroup>
 
   <ItemGroup>
