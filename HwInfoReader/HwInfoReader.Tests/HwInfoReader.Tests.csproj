@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>Antiserum420</Authors>
     <Company>Antiserum420</Company>
+    <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
+    <Description>HwInfoReader.Tests is an ASP.NET Core application to test HwInfoReader.</Description>
   </PropertyGroup>
 
   <ItemGroup>

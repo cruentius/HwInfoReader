@@ -4,9 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Antiserum420</Authors>
     <Company>Antiserum420</Company>
-    <Description>.Net Core Library which uses the HwInfoLibrary dll to read HwInfo sensors and readings.
+    <Description>HwInfoReader is an ASP.NET Core package which contains the HwInfoLibrary dll to read HwInfo sensors and readings.
 
 HwInfoLibrary dll source code found here: https://github.com/Antiserum420/HwInfoLibrary</Description>
+    <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
