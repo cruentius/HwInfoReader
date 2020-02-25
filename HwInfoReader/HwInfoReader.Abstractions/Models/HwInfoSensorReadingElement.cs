@@ -9,11 +9,11 @@ namespace HwInfoReader.Abstractions.Models
         public SensorReadingType tReading;
         public uint dwSensorIndex;
         public uint dwReadingID;
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = ElementConstants.HwInfoSensorsStringLen)]
         public string szLabelOrig;
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = ElementConstants.HwInfoSensorsStringLen)]
         public string szLabelUser;
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 16)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = ElementConstants.HwInfoUnitStringLen)]
         public string szUnit;
         public double Value;
         public double ValueMin;

@@ -7,9 +7,9 @@ namespace HwInfoReader.Abstractions.Models
     {
         public uint dwSensorID;
         public uint dwSensorInst;
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = ElementConstants.HwInfoSensorsStringLen)]
         public string szSensorNameOrig;
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = ElementConstants.HwInfoSensorsStringLen)]
         public string szSensorNameUser;
     };
 }
