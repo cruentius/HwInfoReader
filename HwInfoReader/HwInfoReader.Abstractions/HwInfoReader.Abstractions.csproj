@@ -7,6 +7,14 @@
     <Description>HwInfoReader.Abstractions is an ASP.NET Core package which contains HwInfoReader abstractions.</Description>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
     <PackageTags>aspnetcore</PackageTags>
+    <PackageLicenseFile>Apache License.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Apache License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
