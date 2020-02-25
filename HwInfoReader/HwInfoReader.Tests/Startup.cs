@@ -17,7 +17,8 @@ namespace HwInfoReader.Tests
 
             services
                 .AddControllers()
-                .AddJson();
+                .AddJson()
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
 
             services.AddMvc((options) =>
             {
