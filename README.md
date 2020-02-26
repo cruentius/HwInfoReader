@@ -81,7 +81,7 @@ ReadSensorReadings() method reads the available motherboard sensor readings and 
 
 | Field  | Description |
 | ------------- | ------------- |
-| tReading  | type of sensor reading (e.g None, Temp, Volt) |
+| tReading  | type of sensor reading (e.g Clock, Temp, Volt) |
 | dwSensorIndex  | this is the index of sensor in the Sensors[] array to which this reading belongs to |
 | dwReadingID  | a unique ID of the reading within a particular sensor |
 | szLabelOrig  | original label (e.g. "Chassis2 Fan") |
