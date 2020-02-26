@@ -30,7 +30,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 This will add an IHwInfoReader object to dependency injection that can be used to read HwInfo sensors and readings.
-This interface contains three methods:
+This interface contains two methods:
 
 ```C#
 public void ConfigureServices(IServiceCollection services)
