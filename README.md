@@ -15,6 +15,7 @@ HwInfoLibrary source code found here: https://github.com/Antiserum420/HwInfoLibr
 
 version 1.0.1:
 - Did some cleanup
+
 version 1.0.0:
 - Initial release
 
