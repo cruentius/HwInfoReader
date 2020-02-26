@@ -27,6 +27,7 @@ public void ConfigureServices(IServiceCollection services)
     ...
     services.AddHwInfoReader();
 }
+```
 
 This will add an IHwInfoReader object to dependency injection that can be used to read HwInfo sensors and readings.
 This interface contains three methods:
@@ -38,3 +39,4 @@ public void ConfigureServices(IServiceCollection services)
 
     IEnumerable<HwInfoSensorReadingElement> ReadSensorReadings();
 }
+```
