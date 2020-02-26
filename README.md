@@ -47,12 +47,19 @@ ReadSensors() method reads the available motherboard sensors and will return an 
 ```C#
     public struct HwInfoSensorElement
     {
-        public uint dwSensorID;
+        public uint dwSensorID; 
         public uint dwSensorInst;
         public string szSensorNameOrig;
         public string szSensorNameUser;
     };
 ```
+
+| Field  | Description |
+| ------------- | ------------- |
+| dwSensorID  |  a unique Sensor ID |
+| dwSensorInst  | the instance of the sensor (together with dwSensorID forms a unique ID) |
+| szSensorNameOrig  | original sensor name |
+| szSensorNameUser  | sensor name displayed, which might have been renamed by user |
 
 ReadSensorReadings() method reads the available motherboard sensor readings and will return an enumeration of HwInfoSensorReadingElements. Each HwInfoSensorReadingElement looks like this:
 
@@ -71,3 +78,16 @@ ReadSensorReadings() method reads the available motherboard sensor readings and 
         public double ValueAvg;
     };
 ```
+
+| Field  | Description |
+| ------------- | ------------- |
+| tReading  | type of sensor reading (e.g None, Temp, Volt) |
+| dwSensorIndex  | this is the index of sensor in the Sensors[] array to which this reading belongs to |
+| dwReadingID  | a unique ID of the reading within a particular sensor |
+| szLabelOrig  | original label (e.g. "Chassis2 Fan") |
+| szLabelUser  | label displayed, which might have been renamed by user |
+| szUnit  | e.g. "RPM" |
+| Value  | value of the sensor |
+| ValueMin  | min value of the sensor |
+| ValueMax  | max value of the sensor |
+| ValueAvg  | average value of the sensor |
