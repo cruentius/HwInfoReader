@@ -33,10 +33,41 @@ This will add an IHwInfoReader object to dependency injection that can be used t
 This interface contains two methods:
 
 ```C#
-public void ConfigureServices(IServiceCollection services)
+public interface IHwInfoReader
 {
     IEnumerable<HwInfoSensorElement> ReadSensors();
 
     IEnumerable<HwInfoSensorReadingElement> ReadSensorReadings();
 }
+```
+
+# Usage
+ReadSensors() method reads the available motherboard sensors and will return an enumeration of HwInfoSensorElements. Each HwInfoSensorElement looks like this:
+
+```C#
+    public struct HwInfoSensorElement
+    {
+        public uint dwSensorID;
+        public uint dwSensorInst;
+        public string szSensorNameOrig;
+        public string szSensorNameUser;
+    };
+```
+
+ReadSensorReadings() method reads the available motherboard sensor readings and will return an enumeration of HwInfoSensorReadingElements. Each HwInfoSensorReadingElement looks like this:
+
+```C#
+    public struct HwInfoSensorReadingElement
+    {
+        public SensorReadingType tReading;
+        public uint dwSensorIndex;
+        public uint dwReadingID;
+        public string szLabelOrig;
+        public string szLabelUser;
+        public string szUnit;
+        public double Value;
+        public double ValueMin;
+        public double ValueMax;
+        public double ValueAvg;
+    };
 ```
