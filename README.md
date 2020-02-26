@@ -13,6 +13,9 @@ HwInfoLibrary source code found here: https://github.com/Antiserum420/HwInfoLibr
 
 # Release notes
 
+version 1.0.1:
+- Did some cleanup
+
 version 1.0.0:
 - Initial release
 
@@ -91,3 +94,5 @@ ReadSensorReadings() method reads the available motherboard sensor readings and 
 | ValueMin  | min value of the sensor |
 | ValueMax  | max value of the sensor |
 | ValueAvg  | average value of the sensor |
+
+Available on [releases](https://github.com/Antiserum420/HwInfoReader/releases) page.
