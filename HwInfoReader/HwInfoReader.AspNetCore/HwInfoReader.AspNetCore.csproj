@@ -4,10 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Company>Antiserum420</Company>
     <Authors>Antiserum420</Authors>
-    <Description>HwInfoReader.AspNetCore is an ASP.NET Core package which contains dependency injection extensions for IServiceCollection.</Description>
+    <Description>HwInfoReader.AspNetCore is an ASP.NET Core package which contains dependency injection extensions for registering HwInfoReader in AspNet Core projects.</Description>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
     <PackageTags>aspnetcore</PackageTags>
-    <PackageLicenseFile>Apache License.txt</PackageLicenseFile>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\Apache License.txt">
+    <None Include="..\..\License.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>

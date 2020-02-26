@@ -4,14 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Antiserum420</Authors>
     <Company>Antiserum420</Company>
-    <Description>HwInfoReader.Abstractions is an ASP.NET Core package which contains HwInfoReader abstractions.</Description>
+    <Description>HwInfoReader.Abstractions is an ASP.NET Core package which contains the interfaces for classes that implement the HwInfoReader.</Description>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
     <PackageTags>aspnetcore</PackageTags>
-    <PackageLicenseFile>Apache License.txt</PackageLicenseFile>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\Apache License.txt">
+    <None Include="..\..\License.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
