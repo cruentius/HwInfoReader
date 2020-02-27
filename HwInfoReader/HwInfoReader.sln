@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HwInfoReader.Abstractions",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HwInfoReader.AspNetCore", "HwInfoReader.AspNetCore\HwInfoReader.AspNetCore.csproj", "{7B366E60-86BE-4944-943A-A7848614F76E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HwInfoReader.Tests", "HwInfoReader.Tests\HwInfoReader.Tests.csproj", "{6E259535-3CC2-432B-9CDD-1675C5B90047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HwInfoReader.Tests", "HwInfoReader.Tests\HwInfoReader.Tests.csproj", "{6E259535-3CC2-432B-9CDD-1675C5B90047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{5E719196-143D-4743-BA50-7E255C17FA19}"
+	ProjectSection(SolutionItems) = preProject
+		..\License.txt = ..\License.txt
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
