@@ -9,13 +9,13 @@ namespace HwInfoReader
 {
     public class HwInfoReader : IHwInfoReader
     {
-        [DllImport("HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern IntPtr ReadAllSensors(out uint sizeOut);
 
-        [DllImport("HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern IntPtr ReadAllSensorReadings(out uint sizeOut);
 
-        [DllImport("HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern void ReleasePtr(IntPtr p);
 
         private readonly ILogger<HwInfoReader> _logger;
@@ -29,14 +29,16 @@ namespace HwInfoReader
         {
             var list = new List<HwInfoSensorElement>();
 
-            var ptr = ReadAllSensors(out var sizeOut);
+            var ptr = IntPtr.Zero;
 
             try
             {
+                ptr = ReadAllSensors(out var sizeOut);
+
                 for (var i = 0; i < sizeOut; i++)
                 {
-                    var offset = Marshal.SizeOf(typeof(HwInfoSensorElement)) * i;
-                    var sensor = (HwInfoSensorElement)Marshal.PtrToStructure(IntPtr.Add(ptr, offset), typeof(HwInfoSensorElement));
+                    var offset = Marshal.SizeOf<HwInfoSensorElement>() * i;
+                    var sensor = Marshal.PtrToStructure<HwInfoSensorElement>(IntPtr.Add(ptr, offset));
 
                     list.Add(sensor);
                 }
@@ -57,14 +59,16 @@ namespace HwInfoReader
         {
             var list = new List<HwInfoSensorReadingElement>();
 
-            var ptr = ReadAllSensorReadings(out var sizeOut);
+            var ptr = IntPtr.Zero;
 
             try
             {
+                ptr = ReadAllSensorReadings(out var sizeOut);
+
                 for (var i = 0; i < sizeOut; i++)
                 {
-                    var offset = Marshal.SizeOf(typeof(HwInfoSensorReadingElement)) * i;
-                    var sensor = (HwInfoSensorReadingElement)Marshal.PtrToStructure(IntPtr.Add(ptr, offset), typeof(HwInfoSensorReadingElement));
+                    var offset = Marshal.SizeOf<HwInfoSensorReadingElement>() * i;
+                    var sensor = Marshal.PtrToStructure<HwInfoSensorReadingElement>(IntPtr.Add(ptr, offset));
 
                     list.Add(sensor);
                 }
