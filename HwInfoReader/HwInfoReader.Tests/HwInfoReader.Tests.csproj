@@ -6,7 +6,7 @@
     <Company>Antiserum420</Company>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
     <Description>HwInfoReader.Tests is an ASP.NET Core application to test HwInfoReader.</Description>
-    <PackageLicenseFile>Apache License.txt</PackageLicenseFile>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,13 @@
     <ProjectReference Include="..\HwInfoReader.Abstractions\HwInfoReader.Abstractions.csproj" />
     <ProjectReference Include="..\HwInfoReader.AspNetCore\HwInfoReader.AspNetCore.csproj" />
     <ProjectReference Include="..\HwInfoReader\HwInfoReader.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
