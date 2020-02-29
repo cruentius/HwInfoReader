@@ -10,13 +10,13 @@ namespace HwInfoReader
     public class HwInfoReader : IHwInfoReader
     {
         [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr ReadAllSensors(out uint sizeOut);
+        private static extern IntPtr ReadAllSensors(out uint sizeOut);
 
         [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr ReadAllSensorReadings(out uint sizeOut);
+        private static extern IntPtr ReadAllSensorReadings(out uint sizeOut);
 
         [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void ReleasePtr(IntPtr p);
+        private static extern void ReleasePtr(IntPtr p);
 
         private readonly ILogger<HwInfoReader> _logger;
 
