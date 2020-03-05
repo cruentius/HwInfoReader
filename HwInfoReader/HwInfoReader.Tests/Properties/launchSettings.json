@@ -1,12 +1,4 @@
 ﻿{
-  "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
-    "iisExpress": {
-      "applicationUrl": "http://localhost:53576",
-      "sslPort": 0
-    }
-  },
   "profiles": {
     "HwInfoReader.Tests": {
       "commandName": "Project",
