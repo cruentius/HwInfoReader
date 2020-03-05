@@ -6,7 +6,6 @@ namespace HwInfoReader.Abstractions
     public interface IHwInfoReader
     {
         IEnumerable<HwInfoSensorElement> ReadSensors();
-
         IEnumerable<HwInfoSensorReadingElement> ReadSensorReadings();
     }
 }

@@ -9,15 +9,6 @@ namespace HwInfoReader
 {
     public class HwInfoReader : IHwInfoReader
     {
-        [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
-        private static extern IntPtr ReadAllSensors(out uint sizeOut);
-
-        [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
-        private static extern IntPtr ReadAllSensorReadings(out uint sizeOut);
-
-        [DllImport("Library/HwInfoLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
-        private static extern void ReleasePtr(IntPtr p);
-
         private readonly ILogger<HwInfoReader> _logger;
 
         public HwInfoReader(ILogger<HwInfoReader> logger)
@@ -33,7 +24,7 @@ namespace HwInfoReader
 
             try
             {
-                ptr = ReadAllSensors(out var sizeOut);
+                ptr = HwInfoLibraryWrapper.ReadAllSensors(out var sizeOut);
 
                 for (var i = 0; i < sizeOut; i++)
                 {
@@ -49,7 +40,7 @@ namespace HwInfoReader
             }
             finally
             {
-                ReleasePtr(ptr);
+                HwInfoLibraryWrapper.ReleasePtr(ptr);
             }
 
             return list;
@@ -63,7 +54,7 @@ namespace HwInfoReader
 
             try
             {
-                ptr = ReadAllSensorReadings(out var sizeOut);
+                ptr = HwInfoLibraryWrapper.ReadAllSensorReadings(out var sizeOut);
 
                 for (var i = 0; i < sizeOut; i++)
                 {
@@ -79,7 +70,7 @@ namespace HwInfoReader
             }
             finally
             {
-                ReleasePtr(ptr);
+                HwInfoLibraryWrapper.ReleasePtr(ptr);
             }
 
             return list;
