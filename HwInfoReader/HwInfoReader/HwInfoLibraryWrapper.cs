@@ -5,7 +5,7 @@ namespace HwInfoReader
 {
     internal static class HwInfoLibraryWrapperConstants
     {
-        public const string LibraryPath = "Library/HwInfoLibrary.dll";
+        public const string LibraryPath = "runtimes/win-x64/native/HwInfoLibrary.dll";
     }
 
     internal static class HwInfoLibraryWrapper
