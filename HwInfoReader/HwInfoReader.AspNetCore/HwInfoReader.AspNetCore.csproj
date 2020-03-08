@@ -7,7 +7,7 @@
     <Description>HwInfoReader.AspNetCore is an ASP.NET Core package which contains dependency injection extensions for registering HwInfoReader in AspNet Core projects.</Description>
     <PackageProjectUrl>https://github.com/Antiserum420/HwInfoReader</PackageProjectUrl>
     <PackageTags>aspnetcore</PackageTags>
-    <Version>1.0.2</Version>
+    <Version>1.1.1</Version>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
   </PropertyGroup>
 
