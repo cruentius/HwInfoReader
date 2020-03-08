@@ -1,4 +1,4 @@
-﻿namespace HwHwInfoReader.Abstractions.Enums
+﻿namespace HwInfoReader.Abstractions.Enums
 {
     public enum SensorReadingType
     {

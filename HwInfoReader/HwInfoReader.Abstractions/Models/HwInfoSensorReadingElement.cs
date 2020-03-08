@@ -1,4 +1,4 @@
-﻿using HwHwInfoReader.Abstractions.Enums;
+﻿using HwInfoReader.Abstractions.Enums;
 using System.Runtime.InteropServices;
 
 namespace HwInfoReader.Abstractions.Models
