@@ -13,6 +13,9 @@ HwInfoLibrary source code found here: https://github.com/Antiserum420/HwInfoLibr
 
 # Release notes
 
+version 1.1.1:
+- HwInfo Library now correctly used in nuget package
+
 version 1.0.1:
 - Did some cleanup
 
