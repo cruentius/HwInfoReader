@@ -23,6 +23,9 @@
     <None Update="runtimes\win-x64\native\HwInfoLibrary.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="runtimes\win-x86\native\HwInfoLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="..\..\License.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>

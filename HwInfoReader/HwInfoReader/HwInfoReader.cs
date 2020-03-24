@@ -36,7 +36,7 @@ namespace HwInfoReader
             }
             catch(Exception ex)
             {
-                _logger.LogError("Could not read sensor data", ex);
+                _logger.LogError(ex, "Could not read sensor data");
             }
             finally
             {
@@ -66,7 +66,7 @@ namespace HwInfoReader
             }
             catch (Exception ex)
             {
-                _logger.LogError("Could not read sensor reading data", ex);
+                _logger.LogError(ex, "Could not read sensor reading data");
             }
             finally
             {
