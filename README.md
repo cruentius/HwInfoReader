@@ -13,6 +13,10 @@ HwInfoLibrary source code found here: https://github.com/Antiserum420/HwInfoLibr
 
 # Release notes
 
+version 1.2.0:
+- Added support for Windows x86 systems
+- Did some code improvements
+
 version 1.1.1:
 - HwInfo Library now correctly used in nuget package
 
